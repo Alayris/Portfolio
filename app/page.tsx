@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { motion, useScroll, useTransform } from "framer-motion";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import { ConfettiHover } from "@/components/ui/ConfettiHover";
@@ -15,6 +16,7 @@ const navLinks = [
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
   const { scrollY } = useScroll();
   const textY  = useTransform(scrollY, [0, 600], [0, -80]);
   const imageY = useTransform(scrollY, [0, 600], [0, 40]);
@@ -63,7 +65,7 @@ export default function Home() {
       </motion.header>
 
       {/* ── HERO ── */}
-      <section className="relative pt-24 pb-10 overflow-hidden">
+      <section className="relative min-h-screen pt-24 pb-10 overflow-hidden">
 
         {/* Showreel — droite, derrière le texte */}
         <motion.div
@@ -73,14 +75,18 @@ export default function Home() {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
           className="absolute top-24 md:top-[174px] right-0 w-[62vw] sm:w-[57vw] max-w-[750px] z-0"
         >
-          <div className="relative overflow-hidden" style={{ aspectRatio: "7/5" }}>
+          <div
+            className="relative overflow-hidden cursor-pointer"
+            style={{ aspectRatio: "7/5" }}
+            onClick={() => router.push("/showreel")}
+          >
             <video
               src="https://res.cloudinary.com/kust8hzr/video/upload/q_auto:best/v1782957670/portfolio/images/SHOWREEL_web_z8qtgs.mp4"
               autoPlay
               loop
               muted
               playsInline
-              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", pointerEvents: "none" }}
             />
           </div>
           <p className="text-right pr-7 leading-none" style={{ marginTop: "clamp(-80px, -10vw, -40px)", position: "relative", zIndex: 10,

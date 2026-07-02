@@ -63,7 +63,7 @@ export default function Home() {
       </motion.header>
 
       {/* ── HERO ── */}
-      <section className="relative min-h-screen pt-24 pb-10 overflow-hidden">
+      <section className="relative pt-24 pb-10 overflow-hidden">
 
         {/* Showreel — droite, derrière le texte */}
         <motion.div
@@ -99,7 +99,7 @@ export default function Home() {
         </motion.div>
 
         {/* Titre principal */}
-        <motion.div style={{ y: textY, paddingTop: "clamp(4rem, 55vw, 4rem)" }} className="relative z-10 px-7">
+        <motion.div style={{ y: textY }} className="relative z-10 px-7 pt-[calc(6rem+44vw)] md:pt-16">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

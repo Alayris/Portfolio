@@ -89,7 +89,7 @@ export default function Home() {
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", pointerEvents: "none" }}
             />
           </div>
-          <p className="text-right pr-7 leading-none" style={{ marginTop: "clamp(-80px, -10vw, -40px)", position: "relative", zIndex: 10,
+          <p className="hidden lg:block text-right pr-7 leading-none" style={{ marginTop: "clamp(-80px, -10vw, -40px)", position: "relative", zIndex: 10,
             fontFamily: "var(--font-display)",
             fontWeight: 700,
             fontStyle: "italic",

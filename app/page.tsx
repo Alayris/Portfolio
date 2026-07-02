@@ -73,7 +73,7 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-          className="absolute top-24 md:top-[174px] right-0 w-[62vw] sm:w-[57vw] max-w-[750px] z-0"
+          className="absolute top-24 md:top-[174px] right-0 w-[62vw] sm:w-[57vw] max-w-[750px] z-20"
         >
           <div
             className="relative overflow-hidden cursor-pointer"

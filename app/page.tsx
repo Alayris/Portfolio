@@ -75,7 +75,7 @@ export default function Home() {
         >
           <div className="relative overflow-hidden" style={{ aspectRatio: "7/5" }}>
             <video
-              src="https://res.cloudinary.com/kust8hzr/video/upload/v1782957670/portfolio/images/SHOWREEL_web_z8qtgs.mp4"
+              src="https://res.cloudinary.com/kust8hzr/video/upload/q_auto:best/v1782957670/portfolio/images/SHOWREEL_web_z8qtgs.mp4"
               autoPlay
               loop
               muted

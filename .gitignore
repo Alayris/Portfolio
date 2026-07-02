@@ -31,3 +31,4 @@ next-env.d.ts
 # media now hosted on Cloudinary, kept locally as source backup only
 /public/images/
 /scripts/cloudinary-map.json
+public/images/

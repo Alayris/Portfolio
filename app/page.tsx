@@ -83,12 +83,6 @@ export default function Home() {
               style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
-          <Link href="/showreel" className="flex items-center gap-2 mt-3 justify-start hover:opacity-60 transition-opacity duration-200" style={{ position: "relative", zIndex: 50 }}>
-            <span style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "0.75rem", color: "var(--body-text)" }}>
-              showreel
-            </span>
-            <span style={{ color: "var(--body-text)", fontSize: "0.75rem" }}>→</span>
-          </Link>
           <p className="text-right pr-7 leading-none" style={{ marginTop: "clamp(-80px, -10vw, -40px)", position: "relative", zIndex: 10,
             fontFamily: "var(--font-display)",
             fontWeight: 700,
@@ -107,6 +101,12 @@ export default function Home() {
           }}>
             Amaris*
           </p>
+          <Link href="/showreel" className="flex items-center gap-2 mt-3 justify-start hover:opacity-60 transition-opacity duration-200" style={{ position: "relative", zIndex: 50 }}>
+            <span style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "0.75rem", color: "var(--body-text)" }}>
+              showreel
+            </span>
+            <span style={{ color: "var(--body-text)", fontSize: "0.75rem" }}>→</span>
+          </Link>
         </motion.div>
 
         {/* Titre principal */}

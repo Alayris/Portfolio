@@ -65,7 +65,7 @@ export default function Home() {
       </motion.header>
 
       {/* ── HERO ── */}
-      <section className="relative min-h-screen pt-24 pb-10 overflow-hidden">
+      <section className="relative md:min-h-screen pt-24 pb-10 overflow-hidden">
 
         {/* Showreel — droite, derrière le texte */}
         <motion.div

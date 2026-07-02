@@ -71,8 +71,10 @@ export default function Home() {
           initial={{ opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
-          className="absolute top-24 md:top-[174px] right-0 w-[62vw] sm:w-[57vw] max-w-[750px] z-10"
+          className="absolute top-24 md:top-[174px] right-0 w-[62vw] sm:w-[57vw] max-w-[750px] z-0"
         >
+          {/* Lien showreel tout au dessus */}
+          <Link href="/showreel" className="absolute inset-0 z-50" aria-label="Voir le showreel" />
           <div className="relative overflow-hidden" style={{ aspectRatio: "7/5" }}>
             <video
               src="https://res.cloudinary.com/kust8hzr/video/upload/q_auto:best/v1782957670/portfolio/images/SHOWREEL_web_z8qtgs.mp4"
@@ -92,25 +94,10 @@ export default function Home() {
           }}>
             Menou
           </p>
-          <p className="text-right pr-7 leading-none xl:hidden" style={{ marginTop: "0px", position: "relative", zIndex: 30,
-            fontFamily: "var(--font-display)",
-            fontWeight: 700,
-            fontStyle: "italic",
-            fontSize: "clamp(1.6rem, 3.2vw, 3rem)",
-            color: "var(--title)",
-          }}>
-            Amaris*
-          </p>
-          <Link href="/showreel" className="flex items-center gap-2 mt-3 justify-start hover:opacity-60 transition-opacity duration-200" style={{ position: "relative", zIndex: 50 }}>
-            <span style={{ fontFamily: "var(--font-body)", fontStyle: "italic", fontSize: "0.75rem", color: "var(--body-text)" }}>
-              showreel
-            </span>
-            <span style={{ color: "var(--body-text)", fontSize: "0.75rem" }}>→</span>
-          </Link>
         </motion.div>
 
         {/* Titre principal */}
-        <motion.div style={{ y: textY }} className="relative z-20 px-7 pt-[260px] md:pt-16">
+        <motion.div style={{ y: textY }} className="relative z-10 px-7 pt-16">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}

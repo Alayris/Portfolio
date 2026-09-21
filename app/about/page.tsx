@@ -9,7 +9,7 @@ export default function AboutPage() {
       position: "relative",
       margin: 0,
       padding: 0,
-      backgroundImage: "url('https://res.cloudinary.com/kust8hzr/image/upload/v1782983074/portfolio/images/about/about_me4_tdqvgp.png')",
+      backgroundImage: "url('https://pub-4844509e4b6a42b0b241ac9656d88a95.r2.dev/images/about/about_me4.png')",
       backgroundSize: "100% 100%",
       backgroundRepeat: "no-repeat",
       paddingTop: "198.87%",
@@ -28,7 +28,7 @@ export default function AboutPage() {
         }}
       >
         <Image
-          src="https://res.cloudinary.com/kust8hzr/image/upload/v1782957679/portfolio/images/about/CARTE_DE_VISITE3_dpq9ga.png"
+          src="https://pub-4844509e4b6a42b0b241ac9656d88a95.r2.dev/images/about/CARTE_DE_VISITE3.png"
           alt="Carte de visite Amaris Menou"
           width={600}
           height={420}

@@ -88,7 +88,7 @@ export default function Footer() {
     <footer
       style={{
         position: "relative",
-        backgroundImage: "url('https://res.cloudinary.com/kust8hzr/image/upload/v1782957731/portfolio/images/footer2_us1cgh.jpg')",
+        backgroundImage: "url('https://pub-4844509e4b6a42b0b241ac9656d88a95.r2.dev/images/footer2.jpg')",
         backgroundSize: "100% 100%",
         backgroundRepeat: "no-repeat",
         fontFamily: "var(--font-body)",

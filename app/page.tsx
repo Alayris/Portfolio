@@ -81,7 +81,7 @@ export default function Home() {
             onClick={() => router.push("/showreel")}
           >
             <video
-              src="https://res.cloudinary.com/kust8hzr/video/upload/q_auto:best/v1782957670/portfolio/images/SHOWREEL_web_z8qtgs.mp4"
+              src="https://pub-4844509e4b6a42b0b241ac9656d88a95.r2.dev/images/SHOWREEL_web.mp4"
               autoPlay
               loop
               muted
